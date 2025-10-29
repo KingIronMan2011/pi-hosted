@@ -6248,6 +6248,47 @@
 		},
 		{
 			"categories": [
+				"AI",
+				"Tools"
+			],
+			"description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.",
+			"image": "ghcr.io/open-webui/open-webui:main",
+			"logo": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
+			"name": "open-webui",
+			"platform": "linux",
+			"ports": [
+				"3000:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Open WebUI",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/open-webui",
+					"container": "/app/backend/data"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://openwebui.com/\" target=\"_blank\">https://openwebui.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.openwebui.com/\" target=\"_blank\">https://docs.openwebui.com/</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"AI",
+				"Tools"
+			],
+			"description": "Open WebUI (GPU) is an extensible, feature-rich, and user-friendly self-hosted WebUI with NVIDIA GPU support for accelerated inference. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.",
+			"logo": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
+			"name": "open-webui-gpu",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://openwebui.com/\" target=\"_blank\">https://openwebui.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.openwebui.com/\" target=\"_blank\">https://docs.openwebui.com/</a><br><br><br>Requires NVIDIA GPU and nvidia-docker runtime. The GPU version uses the CUDA-enabled image for accelerated inference.",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/open-webui-gpu.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"title": "Open WebUI (GPU)",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Tools"
 			],
 			"description": "Free & Open-Source HTML5 Network Performance Estimation Tool",

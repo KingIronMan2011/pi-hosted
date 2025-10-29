@@ -1,0 +1,20 @@
+{
+	"categories": [
+		"AI",
+		"Tools"
+	],
+	"description": "Open WebUI (GPU) is an extensible, feature-rich, and user-friendly self-hosted WebUI with NVIDIA GPU support for accelerated inference. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.",
+	"logo": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
+	"name": "open-webui-gpu",
+	"note": "Requires NVIDIA GPU and nvidia-docker runtime. The GPU version uses the CUDA-enabled image for accelerated inference.",
+	"officialDoc": "https://docs.openwebui.com/",
+	"platform": "linux",
+	"repository": {
+		"stackfile_arm64": "stack/open-webui-gpu.yml",
+		"stackfile_amd64": "stack/open-webui-gpu.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"title": "Open WebUI (GPU)",
+	"type": 3,
+	"webpage": "https://openwebui.com/"
+}

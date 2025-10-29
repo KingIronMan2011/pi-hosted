@@ -164,7 +164,7 @@ For complex multi-container setups:
 2. **Defaults**: Provide sensible defaults that work out of the box
 3. **Documentation**: If an app needs special configuration, document it
 4. **Testing**: Test on the target architecture when possible
-5. **Updates**: Prefer `latest` tags for community templates, specific versions for production
+5. **Updates**: Use specific version tags when possible for reproducibility; `latest` tags are acceptable for community templates but document the trade-off
 6. **Compatibility**: Note any OS-specific requirements in descriptions
 7. **Resources**: Include resource requirements in descriptions for resource-constrained devices
 

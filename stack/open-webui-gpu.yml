@@ -1,0 +1,18 @@
+---
+version: "3"
+services:
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:cuda
+    container_name: open-webui-gpu
+    ports:
+      - "3000:8080"
+    volumes:
+      - /portainer/Files/AppData/Config/open-webui-gpu:/app/backend/data
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

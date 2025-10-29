@@ -1,0 +1,26 @@
+{
+	"categories": [
+		"AI",
+		"Tools"
+	],
+	"description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.",
+	"image_arm64": "ghcr.io/open-webui/open-webui:main",
+	"image_amd64": "ghcr.io/open-webui/open-webui:main",
+	"logo": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
+	"name": "open-webui",
+	"officialDoc": "https://docs.openwebui.com/",
+	"platform": "linux",
+	"ports": [
+		"3000:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Open WebUI",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/open-webui",
+			"container": "/app/backend/data"
+		}
+	],
+	"webpage": "https://openwebui.com/"
+}
